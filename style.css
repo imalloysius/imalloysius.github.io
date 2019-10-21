@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F7F9F9;
+}
+
+/* --------------------- NAVIGASI FRIST --------------------- */
+
+.logo{
+    margin: 7px 0 0 25px;
+    position: absolute; 
+}
+.logo img{
+    width: 50px;  
+    vertical-align: middle;
+    position: absolute; 
+}
+
+.logo h3{
+    color: #28B463;
+    font-size: 25px;
+    text-align: center;
+    padding: 7px 0 0 70px;
+    font-family: Barlow, sans-serif;
+}
+
+.navigasi nav{
+    width: 100%;
+    background: black;
+    overflow: auto;
+    font-family: Barlow;
+}
+
+.navigasi nav ul{
+    padding: 0;
+    list-style: none;
+}
+
+.navigasi nav ul li{
+    float: right;   
+}
+
+.navigasi nav ul li a{
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    padding: 22px 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.navigasi nav ul li a:hover{
+    color: green;
+    background-color: white;
+    transition: 0.5s;
+}
+/* --------------------- NAVIGASI END --------------------- */
+
+/* --------------------- SLIDER FIRST --------------------- */
+
+
+.container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: -300px;
+}
+
+.container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 50%;
+    animation: animate 30s linear infinite;
+}
+
+.container .slider .slide{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.container .slider .slide .caption{
+    position: absolute;
+    color: white;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    padding: 30px;
+    /*background: rgba(0,0,0,.5);*/
+    box-sizing: border-box;
+}
+
+.container .slider .slide .caption h2{
+    margin: 0 0 20px;
+    padding: 0;   
+    font-size: 50px;       
+    text-transform: uppercase;
+    font-family: Barlow;
+    max-width: 70%;
+}
+
+.container .slider .slide .caption p{
+    margin: 0;
+    padding: 0;          
+    font-size: 20px;
+    font-family: sans-serif;
+    max-width: 60%;
+}
+
+.container .slider .slide.slide1{
+    background: url(slide/slide1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container .slider .slide.slide2{
+    background: url(slide/slide2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container .slider .slide.slide3{
+    background: url(slide/slide3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container .slider .slide.slide1{
+    background: url(slide/slide1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container .slider .slide.slide4{
+    background: url(slide/slide4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes animate{
+    0%
+    {left: 0;}
+    20%
+    {left: 0;}
+    25%
+    {left: -100%;}
+    45%
+    {left: -100%;}
+    50%
+    {left: -200%;}
+    70%
+    {left: -200%;}
+    75%
+    {left: -300%;}
+    95%
+    {left: -300%;}
+    100%
+    {left: -400%;}
+}
+/* --------------------- SLIDER END --------------------- */
+
+
+/* --------------------- GALLERY FIRST ---------------------*/
+.hader{
+    margin-top: -175px;
+    margin-bottom: 300px;
+}
+.hader h1{
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hader .main{
+    margin-top: 0;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 300px;
+    padding-bottom: 20px;
+}
+
+.hader .main .box{
+    display: block;
+    float: left;
+    width: 200px;
+    /*padding: top right bottom left*/
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+    
+}
+
+.hader .main img{
+    width: 100%;
+}
+
+.hader .main img:hover{
+    transform: scale(2,2);
+    transition-duration: .3s;
+    border-radius: 5px;
+}
+/* --------------------- GALLERY END ---------------------*/
+
+/*------------------------------- NEWS FIRST ---------------------------------*/
+.newstitle h1{
+    text-align: center;
+    font-family: barlow;
+}
+
+.groupnews {
+    margin: 0;
+    padding-top: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.groupnews .news{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    margin: 0 75px 30px 75px;
+}
+
+.groupnews .news .box{
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    margin: 10px ;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.groupnews .news .box p{
+    text-align: justify;
+}
+
+.groupnews .news .box img {
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+.groupnews .news .box h3, .groupnews .news .box h6, .groupnews .news .box p{
+    padding-bottom: 10px;
+}
+/*------------------------------- NEWS END ---------------------------------*/
+
+/*------------------------------- OURTEAM FIRST ---------------------------------*/
+
+.judulourteam h1{
+    text-align: center;
+    font-family: barlow;
+}
+
+.groupourteam {
+    margin: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'barlow', sans-serif;
+}
+
+.groupourteam .ourteam{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    margin: -150px 75px 30px 75px;
+}
+
+.groupourteam .ourteam .box{
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    /*background: #fff;*/
+    /*box-shadow: 0 5px 15px rgba(0,0,0,.1);*/
+    margin: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.groupourteam .ourteam .box .ourteamimg img{
+    max-width: 100%;
+    border-radius: 250px;
+    padding-bottom: 20px;
+}
+
+.groupourteam .ourteam .box .ourteamcontent{
+    text-align: center;
+}
+
+.groupourteam .ourteam .box .ourteamcontent h2, p{
+    padding-bottom: 10px;
+}
+/*------------------------------- OURTEAM END ---------------------------------*/
+
+/*------------------------------- FOOTER FIRST ---------------------------------*/
+footer{
+    background: #333333;
+    min-height: 200px;
+}
+
+.about h4{
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    font-family: barlow;
+}
+/*GREENEARTHLOGO*/
+.about .aboutjudul img{
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+/*SOCIALMEDIAICON*/
+.about .abouticon img{
+    width: 20px;
+    padding-right: 5px;
+}
+
+
+
+.about .abouticon{
+    width: auto;
+    max-width: 400px;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.about .cr{
+    padding-top: 20px;
+}
+
+.about .cr h4{
+    background: #202020;
+    color: white;
+    font-family: barlow;
+    text-align: center;
+    padding: 20px;
+}
+/*------------------------------- FOOTER END ---------------------------------*/
